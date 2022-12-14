@@ -1,0 +1,31 @@
+[build-system]
+requires      = ["lxml==4.9.1", "setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yakindu_merge"
+version = "0.0.1"
+description = "Divide and merge statecharts for easy collaboration"
+readme = "README.md"
+authors = [{ name = "Real Python", email = "info@realpython.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["yakindu", "tool", "merge"]
+dependencies = [
+    "lxml==4.9.1",
+    'tomli; python_version < "3.11"',
+]
+requires-python = ">=3.6"
+
+[project.optional-dependencies]
+dev = ["black", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = ""
+
+[project.scripts]
+realpython = "yakindu_merge.__main__:main"
