@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yakindu-merge-py"
-version = "0.0.1"
+version = "0.0.2"
 description = "Divide and merge statecharts for easy collaboration"
 readme = "README.md"
 authors = [{ name = "Rein Spanjer", email = "contact@reinspanjer.nl" }]
