@@ -152,7 +152,7 @@ class IO:
         return etree.fromstring(bytes(data, 'utf-8'))
 
 
-def main(args):
+def run(args):
     template = sct_generator(args.template, True)
     d_map = template.pre_process()
     template = sct_genetaror_from_etree(IO.pre_process(args.template, d_map), args.template)
@@ -198,9 +198,9 @@ def sct_genetaror_from_etree(root: _Element, path: str):
 
     return SCT(root, root, nsmap, filename, True)
     
-def arg_parse():
+def main():
     parser = argparse.ArgumentParser(
-                    prog = 'sctc',
+                    prog = 'yakmerge',
                     description = """
                     split statecharts into components
                     """)
@@ -208,8 +208,4 @@ def arg_parse():
     parser.add_argument("-o", "--out", help='Yakindu statechart file')
     parser.add_argument("sources", nargs="+", help='list of glob patterns of input files')
     
-    return parser.parse_args()
-
-if __name__ == "__main__":
-    
-    main(arg_parse())
+    run(parser.parse_args())

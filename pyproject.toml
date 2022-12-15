@@ -3,11 +3,11 @@ requires      = ["lxml==4.9.1", "setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "yakindu_merge"
+name = "yakindu-merge-py"
 version = "0.0.1"
 description = "Divide and merge statecharts for easy collaboration"
 readme = "README.md"
-authors = [{ name = "Real Python", email = "info@realpython.com" }]
+authors = [{ name = "Rein Spanjer", email = "contact@reinspanjer.nl" }]
 license = { file = "LICENSE" }
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -25,7 +25,7 @@ requires-python = ">=3.6"
 dev = ["black", "pip-tools", "pytest"]
 
 [project.urls]
-Homepage = ""
+Homepage = "https://github.com/Spanjer1/yakindu-merge-py"
 
 [project.scripts]
-realpython = "yakindu_merge.__main__:main"
+yakmerge = "yakmerge.__main__:main"
