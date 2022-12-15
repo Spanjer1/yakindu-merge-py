@@ -22,6 +22,6 @@ Every component needs to have one composite state with the filename surrounded b
 TrafficLightOn.ysc has a composite state with \_TrafficLightOn\_ and TrafficLightOff.ysc -> \_TrafficLightOff\_. 
 The template has two composite state. The template defines the interaction between the different components. 
 
-The final.ysc is produced. It is also possible to overwrite the template when omitting the -o option. But be aware that this overwrite the template file. 
+The final.ysc is produced. It is also possible to overwrite the template when omitting the -o option. But be aware that this overwrites the template file. 
 
 The definition is not migrated, each component needs to have a copy.

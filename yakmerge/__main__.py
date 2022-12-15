@@ -204,8 +204,8 @@ def main():
                     description = """
                     split statecharts into components
                     """)
-    parser.add_argument("-t", "--template", help='Special statechart file for positioning of the elements', required=True)
-    parser.add_argument("-o", "--out", help='Yakindu statechart file')
-    parser.add_argument("sources", nargs="+", help='list of glob patterns of input files')
+    parser.add_argument("-t", "--template", help='Template file for layout and interaction', required=True)
+    parser.add_argument("-o", "--out", help='output to separate YAKINDU statechart file')
+    parser.add_argument("sources", nargs="+", help='list of component files')
     
     run(parser.parse_args())
